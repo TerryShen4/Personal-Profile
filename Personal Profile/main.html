@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Terry Shen - Personal Website</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #007BFF 3px solid;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin: 0 15px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+        }
+        section h2 {
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+        section p, section ul {
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* Media Queries */
+        @media(max-width: 768px) {
+            nav ul {
+                display: block;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        /* Image Styling */
+        .gallery {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 600px; /* Restricts image width */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        .contact-form button {
+            margin-top: 20px;
+            padding: 10px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="branding">
+        <h1>Terry Shen</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Work & Volunteer Experience</a></li>
+            <li><a href="#skills">Skills & Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Terry Shen</strong>, a student at Richmond Secondary School in Richmond, BC, expecting to graduate in June 2025. I'm passionate about robotics, squash, programming, and music. Throughout my high school years, I've actively participated in various clubs and competitions, which have helped me develop strong leadership, technical, and interpersonal skills.</p>
+    <p>I'm committed to excellence in both academics and extracurricular activities. My goal is to pursue a career that combines my interests in technology and engineering, and I'm always eager to learn and take on new challenges.</p>
+</section>
+
+<section id="experience">
+    <h2>Work & Volunteer Experience</h2>
+
+    <h3>Volunteer Squash Coach</h3>
+    <p><em>Vancouver Squash Academy — July 2022 – Present</em></p>
+    <ul>
+        <li>Coached children ages 6–12 in squash fundamentals and techniques.</li>
+        <li>Assisted in organizing summer camps and coaching sessions.</li>
+        <li>Developed training drills, corrected techniques, and supervised matches.</li>
+    </ul>
+    <!-- Visual: Insert image related to coaching -->
+    <div class="gallery">
+        <img src="squash.jpg" alt="Squash Coaching">
+    </div>
+
+    <h3>President & Founder, Robotics Club</h3>
+    <p><em>Richmond Secondary School — September 2022 – Present</em></p>
+    <ul>
+        <li>Established and led the school's Robotics Club.</li>
+        <li>Created and taught a custom robotics curriculum.</li>
+        <li>Managed club logistics, budgeting, and fund allocation.</li>
+        <li>Guided members through robotics projects and competition preparation.</li>
+    </ul>
+    <!-- Visual: Insert image related to robotics club -->
+    <div class="gallery">
+        <img src="kids-coding-designing-robotics-GettyImages-1321196626-1200x624.jpg" alt="Robotics Club">
+    </div>
+
+    <h3>Vice President, Model Rocketry Club</h3>
+    <p><em>Richmond Secondary School — September 2022 – Present</em></p>
+    <ul>
+        <li>Supported students in designing and building model rockets.</li>
+        <li>Planned and coordinated aeronautical projects and launch events.</li>
+        <li>Facilitated workshops on rocketry principles.</li>
+    </ul>
+    <!-- Visual: Insert image of model rockets -->
+    <div class="gallery">
+        <img src="model rocketry.jpg" alt="Model Rocketry">
+    </div>
+
+    <h3>Public Relations Member, Colts Commit</h3>
+    <p><em>Richmond Secondary School — September 2022 – Present</em></p>
+    <ul>
+        <li>Coordinated school events and activities.</li>
+        <li>Collaborated with administration for event approvals.</li>
+        <li>Managed public announcements and increased student engagement.</li>
+    </ul>
+    <!-- Visual: Insert image of student council event -->
+    <!-- If you have an image, include it here -->
+    <div class="gallery">
+    </div>
+
+    <h3>Robotics Mentor</h3>
+    <p><em>DC Coding Odyssey — Scheduled for 2024</em></p>
+    <ul>
+        <li>Mentoring students in robotics and coding projects.</li>
+    </ul>
+
+    <h3>Selected Participant</h3>
+    <p><em>National Student Leadership Conference (NSLC) — 2024</em></p>
+    <ul>
+        <li>Recruited to represent Richmond Secondary School at NSLC.</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills, Interests, and Hobbies</h2>
+
+    <h3>Skills</h3>
+    <ul>
+        <li><strong>Languages:</strong> Native Mandarin, Intermediate French</li>
+        <li><strong>Technical Skills:</strong> Programming (Java, Python), Robotics, Video Editing, Drone Operation</li>
+        <li><strong>Certifications:</strong>
+            <ul>
+                <li>Registered Squash Referee (Squash Canada)</li>
+                <li>Certified Drone Operator (Transport Canada)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Interests and Hobbies</h3>
+
+    <h4>Squash</h4>
+    <ul>
+        <li>Active player since 2017 at Vancouver Squash Academy.</li>
+        <li><strong>Tournament Highlights:</strong>
+            <ul>
+                <li>2023 Jesters BC Open – Gold Series: Winner of Plate 1a</li>
+                <li>2022 Oxford Properties Canadian</li>
+                <li>VSA Milwaukee Tools Fall Junior Open 2023 – Gold Series</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Visual: Insert image of squash tournament -->
+    <div class="gallery">
+    </div>
+
+    <h4>Piano</h4>
+    <ul>
+        <li>Completed Royal Conservatory of Music Level 10 Piano.</li>
+        <li><strong>Achievements:</strong>
+            <ul>
+                <li>First Class Honours with Distinction in Level 8 Theory (96%).</li>
+                <li>First Class Honours in Level 9 Harmony and History.</li>
+                <li>Finalist at the Pacific Rim International Music Festival 2019.</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Visual: Insert image of piano performance -->
+    <div class="gallery">
+    </div>
+
+    <h4>Programming</h4>
+    <ul>
+        <li>Scored 5 on both AP Computer Science and AP Calculus BC exams.</li>
+        <li>Developed a 2D fighting game with a programming team.</li>
+        <li>Active member of the school's Programming Club since 2020.</li>
+        <li><strong>Competitions:</strong>
+            <ul>
+                <li>Received certificates in the Canadian Computing Competition at Junior and Senior levels (2023).</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Visual: Insert screenshot of programming project -->
+    <div class="gallery">
+
+    </div>
+
+    <h4>Science Competitions</h4>
+    <ul>
+        <li>Member of the Richmond Secondary School Science Team.</li>
+        <li><strong>Achievements:</strong>
+            <ul>
+                <li>2022 Kwantlen Science Challenge (Junior Division): Winning team</li>
+                <li>2023 Kwantlen Science Challenge (Senior Division): 4th place</li>
+                <li>Recognized at the 46th UBC Physics Olympics for team achievement.</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Visual: Insert image from science competition -->
+    <div class="gallery">
+
+    </div>
+
+    <h4>Public Speaking</h4>
+    <ul>
+        <li>3rd Place in the Warm Hearts of Africa Speech Competition (2021).</li>
+        <li>2nd Place at the 2022 Canadian High Schools Law Competition.</li>
+        <li>Delegate at CAHSMUN 2022 for the Huawei Committee.</li>
+    </ul>
+    <!-- Visual: Insert image of public speaking event -->
+    <div class="gallery">
+
+    </div>
+
+    <h4>Videography and Drone Operation</h4>
+    <ul>
+        <li>Produced promotional videos for Shenzhen SSTC.</li>
+        <li>Manages an Instagram account showcasing videography projects.</li>
+    </ul>
+    <!-- Visual: Insert screenshot from a video project -->
+    <div class="gallery">
+
+    </div>
+
+    <h4>Other Hobbies</h4>
+    <ul>
+        <li>Swimming, Cycling, Weight Training, Badminton, Drawing</li>
+    </ul>
+    <!-- Visual: Insert image related to hobbies -->
+    <div class="gallery">
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me for any inquiries or opportunities.</p>
+    <p><strong>Email:</strong> <a href="mailto:shenterry4@gmail.com">shenterry4@gmail.com</a></p>
+    <p><strong>Location:</strong> Richmond, BC, Canada</p>
+    <!-- Optional: Contact Form -->
+    <!--
+    <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+    
+        <button type="submit">Send Message</button>
+    </form>
+    -->
+</section>
+
+<footer>
+    <p>&copy; 2023 Terry Shen</p>
+</footer>
+
+</body>
+</html>
